@@ -1,0 +1,26 @@
+service: serverless-hello-world
+
+package:
+    individually: true
+
+plugins:
+    - serverless-bundle
+    - serverless-offline
+
+custom:
+        bundle:
+            linting: true
+
+provider:
+        name: aws
+        runtime: nodejs8.10
+        stage: dev
+        region: us-west-2
+
+functions:
+    hello:
+        handler: actions.hello
+        events:
+            - http:
+                path: hello
+                method: get

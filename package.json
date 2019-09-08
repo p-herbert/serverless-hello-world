@@ -1,0 +1,21 @@
+{
+  "name": "serverless-hello-world",
+  "version": "1.0.0",
+  "description": "Serverless Hello World",
+  "main": "actions.js",
+  "scripts": {
+    "test": "serverless-bundle test"
+  },
+  "keywords": [
+    "aws",
+    "serverless",
+    "node"
+  ],
+  "author": "Peter Herbert (p-herbert)",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-bundle": "^1.2.3",
+    "serverless-offline": "^5.10.1"
+  },
+  "dependencies": {}
+}
